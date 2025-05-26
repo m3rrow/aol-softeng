@@ -11,8 +11,8 @@ python3 client.py	# for buyer
 ```
 
 ## next features
-> share url via qrcode  
-> web gui  
-> integrate with government data protection (kominfo) for anti fraud  
-> integrate with local bank for easy transfer  
-> email or phone otp confirmation  
+- share url via qrcode  
+- web gui  
+- integrate with government data protection (kominfo) for anti fraud  
+- integrate with local bank for easy transfer  
+- email or phone otp confirmation  
