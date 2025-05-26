@@ -15,8 +15,9 @@ print(resp.text)
 
 def print_message(data):
     for msg in data:
-        print(msg)
+        print(msg[0])
 
+# konfirmasi pembayaran
 while True:
     system("cls")
     resp = requests.post('http://127.0.0.1:8080/get_message', json=data)

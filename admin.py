@@ -10,7 +10,8 @@ data = {
     'username': username,
     'privilege': 'penjual',
     'partner': 'none',
-    'amount': 1000# set amount with real money
+    # 'amount': 500_000# set amount with real money
+    'amount': int(input('total transaksi> '))
 }
 
 resp = requests.post('http://127.0.0.1:8080/create_room', json=data)
@@ -18,8 +19,9 @@ print(resp.text)
 
 def print_message(data):
     for msg in data:
-        print(msg)
+        print(msg[0])
 
+# konfirmasi buyer masuk ke chatroom
 while True:
     system("cls")
     resp = requests.post('http://127.0.0.1:8080/get_message', json=data)
@@ -33,6 +35,7 @@ while True:
             exit(1)
     sleep(5)
 
+# konfirmasi pembayaran
 while True:
     system("cls")
     resp = requests.post('http://127.0.0.1:8080/get_message', json=data)
