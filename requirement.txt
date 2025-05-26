@@ -1,0 +1,4 @@
+flask
+cryptography
+mysql-connector-python
+qrcode
